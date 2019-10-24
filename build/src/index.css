@@ -1,0 +1,66 @@
+/* @import '~antd/dist/antd.css' */
+ul li{
+    list-style:none;
+}
+body{
+    padding:0;
+    margin:0;
+    background-color:#ccc;
+}
+
+/* header */
+.headerwrap{
+    height:50px;
+    background-color: black;
+    color:white;
+}
+.header{
+    width:500px;
+    height:30px;
+    line-height:50px;
+    margin:0 auto;
+}
+#inp{
+    width:320px;
+    height:25px;
+    font-size:14px;
+    border:1px solid black;
+    border-radius: 6px;
+    margin-left:50px;
+    padding-left:8px;
+}
+
+/* main */
+.details{
+    width:500px;
+    margin:0 auto;
+}
+.list{
+    margin:0;
+    padding:0;
+}
+li{
+    width:450px;
+    height:25px;
+    background-color: rgb(245, 244, 244);
+    border:1px gray solid;
+    margin:3px 0;
+    border-radius:2px;
+    padding-left:10px;
+}
+span{
+    position: relative;
+    left:350px;
+    display:inline-block;
+    padding:0 5px;
+    height:20px;
+    border-radius:20px;
+    background:#E6E6FA;
+    line-height:22px;
+    text-align:center;
+    color:#666;
+    font-size:14px;
+}
+button{
+    float:right;
+}
