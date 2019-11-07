@@ -4,7 +4,8 @@ export default class Detail extends Component {
     constructor(){
         super();
         this.state={
-            data:[]
+            data:[],
+            udetail:[]
         }
     }
     componentDidMount(){
@@ -17,7 +18,8 @@ export default class Detail extends Component {
         .then((res)=>{
             // console.log(res.data);
             this.setState({
-                data:res.data.content
+                data:res.data,
+                udetail:res.data.author
             });
         })
     }
@@ -30,17 +32,22 @@ export default class Detail extends Component {
             )
             .then((res)=>{
                 this.setState({
-                    data:res.data.content
+                    data:res.data,
+                    udetail:res.data.author
                 });
             })
         }
     }
     render() {
+        // let author = this.state.data.author; 
+        // console.log(author.loginname);
+        let loginname = this.state.udetail.loginname;
         return (
             <div>
-                {
-                    <div style={{overflow:'hidden',backgroundColor:'white',padding:'20px'}}dangerouslySetInnerHTML={{__html:this.state.data}}></div>
-                }
+                {<h2 style={{backgroundColor:'white',padding:'10px 20px',margin:0}} dangerouslySetInnerHTML={{__html:this.state.data.title}}></h2>}
+                {<p style={{backgroundColor:'white',fontSize:'11px',color:'gray',padding:'0 20px 10px 20px',margin:0}} dangerouslySetInnerHTML={{__html:`· 发布于1天前 · 作者${loginname} · ${this.state.data.visit_count}次浏览`}}></p>}
+                {<hr/>}
+                {<div style={{overflow:'hidden',backgroundColor:'white',padding:'10px 20px',margin:0}} dangerouslySetInnerHTML={{__html:this.state.data.content}}></div>}
             </div>
         )
     }

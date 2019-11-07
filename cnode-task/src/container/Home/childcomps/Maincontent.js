@@ -64,8 +64,8 @@ export default class Maincontent extends Component {
                 <ul className='page-item'>
                     {
                         this.state.pagenum.map((item,index)=>(
-                            <Link to={`${url}${search}&page=${item}`}>
-                                <li key={index} className='page-num'>{item}</li>
+                            <Link to={`${url}${search}&page=${item}`} key={index}>
+                                <li className='page-num'>{item}</li>
                             </Link>
                         ))
                     }
