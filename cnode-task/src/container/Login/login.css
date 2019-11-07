@@ -1,0 +1,24 @@
+.input-login{
+    width:900px;
+    height:500px;
+    background-color: #fff;
+    padding:100px 300px;
+}
+.btn-login{
+    width:120px;
+    height:30px;
+    color:#fff;
+    margin-left:90px;
+    border:1px solid rgb(75, 195, 243);
+    background-color: rgb(75, 195, 243);
+}
+.inputt{
+    margin:20px 20px;
+}
+.inputt2{
+    margin:20px 33px;
+}
+.input-login input{
+    border:1px solid gray;
+    margin-left:20px;
+}
