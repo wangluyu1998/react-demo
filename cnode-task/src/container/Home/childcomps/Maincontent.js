@@ -43,6 +43,9 @@ export default class Maincontent extends Component {
         let url = this.props.match.url;
         let str = this.props.location.search;
         let search = str.split('&')[0];
+        if(!this.props.location.search){
+            search='?tab=all';
+        }
         // console.log(search);
         return (
             <div>
