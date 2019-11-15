@@ -39,8 +39,10 @@ export default class AppHome extends Component {
                   }
                 </Flex>
                 </div>
-                <div className='bottom' style={{height:'220px'}}>
+                <div style={{float:'left',height:'220px',width:'100%'}}>
+                  <div style={{float:'left',height:'42px'}}>
                   <img src="./images/li.jpg" className="bottom-img1" alt=""/><span style={{fontSize:'18px',lineHeight:'42px'}}>热门推荐</span>
+                  </div>
                   {
                     [1,2].map((val)=>(
                       <div key={val} className='bottom1'>

@@ -12,6 +12,7 @@ code {
 }
 .list1{
   float:left;
+  width:100%;
   height:120px;
   background-color: rgb(243, 237, 237);
 }
@@ -33,6 +34,7 @@ code {
 }
 .bottom1{
   float:left;
+  width:100%;
   height:178px;
   position:relative;
   margin-bottom:10px;
